@@ -1,0 +1,64 @@
+Script to test Network topology
+By: Mohammed Aboutabl
+
+Wed Aug 28 17:52:13 EDT 2019
+
+Hostname: gw
+
+Network Devices
+ens33: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.169.129  netmask 255.255.255.0  broadcast 192.168.169.255
+        inet6 fe80::9611:ae94:6643:1dff  prefixlen 64  scopeid 0x20<link>
+        ether 00:0c:29:d9:d8:a6  txqueuelen 1000  (Ethernet)
+        RX packets 844  bytes 776470 (776.4 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 340  bytes 41754 (41.7 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+ens38: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.100.1  netmask 255.255.255.0  broadcast 10.0.100.255
+        inet6 fe80::6d3c:25c4:76c2:4f7  prefixlen 64  scopeid 0x20<link>
+        ether 00:0c:29:d9:d8:b0  txqueuelen 1000  (Ethernet)
+        RX packets 282  bytes 43455 (43.4 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 193  bytes 17361 (17.3 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+ens39: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.200.1  netmask 255.255.255.0  broadcast 10.0.200.255
+        inet6 fe80::d006:205c:dd64:c658  prefixlen 64  scopeid 0x20<link>
+        ether 00:0c:29:d9:d8:ba  txqueuelen 1000  (Ethernet)
+        RX packets 216  bytes 40317 (40.3 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 128  bytes 11736 (11.7 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+ens40: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 172.16.1.1  netmask 255.255.255.0  broadcast 172.16.1.255
+        inet6 fe80::2326:4181:4420:b95b  prefixlen 64  scopeid 0x20<link>
+        ether 00:0c:29:d9:d8:c4  txqueuelen 1000  (Ethernet)
+        RX packets 180  bytes 33911 (33.9 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 127  bytes 11733 (11.7 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 357  bytes 29176 (29.1 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 357  bytes 29176 (29.1 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+
+Pinging 10.0.100.1 ... ok
+Pinging 10.0.200.1 ... ok
+Pinging 172.16.1.1 ... ok
+Pinging 10.0.100.2 ... ok
+Pinging 10.0.100.22 ... ok
+Pinging 10.0.200.3 ... ok
+Pinging 172.16.1.4 ... ok
+
+All is GOOD
+
